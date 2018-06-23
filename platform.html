@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://constellationlabs.io/ -->
+<html lang="zxx" class="js gr__constellationlabs_io"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="author" content="Constellation Labs">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="An Enterprise AI that provides solution to business problems". Scalable - Fault Resistant - Fast Transactions">
+	<!-- Fav Icon  -->
+	<link rel="shortcut icon" href="https://constellationlabs.io/images/favicon.png">
+	<link href="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/css" rel="stylesheet">
+	<!-- Site Title  -->
+	<title>Horizontally Scalable Hylochain With Microservices | Constellation Labs</title>
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
+	<!-- Vendor Bundle CSS -->
+	<link rel="stylesheet" href="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/vendor.bundle.css">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/style.css">
+	<link rel="stylesheet" href="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/theme-java.css">
+	<link rel="stylesheet" href="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/custom.css">
+
+	<!-- Start Facebook Pixel Code -->
+	<script src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/leadflows.js.download" type="text/javascript" id="LeadFlows-4221910" crossorigin="anonymous" data-leadin-portal-id="4221910" data-leadin-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="4221910" data-hsjs-env="prod"></script><script src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/4221910.js.download" type="text/javascript" id="hs-analytics"></script><script type="text/javascript" async="" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/insight.min.js.download"></script><script type="text/javascript" async="" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/bat.js.download"></script><script type="text/javascript" async="" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/uwt.js.download"></script><script type="text/javascript" async="" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/analytics.js.download"></script><script async="" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/gtm.js.download"></script><script src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/1873008412731659" async=""></script><script src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/1766519026947993" async=""></script><script async="" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/fbevents.js.download"></script><script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '1873008412731659');
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+		<img height="1" width="1" src="https://www.facebook.com/tr?id=1873008412731659&ev=PageView
+		&noscript=1" />
+	</noscript>
+	<!-- End Facebook Pixel Code -->
+
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/js"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-110541273-1');
+	</script>
+
+
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-MPDR5T8');
+	</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Start of HubSpot Embed Code -->
+	<script type="text/javascript" id="hs-script-loader" async="" defer="" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/4221910.js(1).download"></script>
+	<!-- End of HubSpot Embed Code -->
+<style type="text/css" id="hs-form-stylefd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d">.hs-button-reset,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button{border:none;font-family:Roboto;line-height:1;margin:0;outline:0;padding:0}.base-hs-button-styles,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button{text-decoration:none;cursor:pointer;display:inline-block;font-size:12px;font-weight:700;line-height:12px;padding:7px 18px 7px;position:relative;text-align:center}.base-hs-button-styles:hover,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button:hover{text-decoration:none}input.hs-input[type=checkbox],input.hs-input[type=radio]{cursor:pointer}input.hs-input,textarea.hs-input,select.hs-input{display:inline-block;width:210px;height:18px;padding:4px;font-family:Roboto;font-size:13px;font-weight:normal;line-height:18px;color:#666;border:1px solid #ccc;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;border-radius:3px}textarea.hs-input{padding-top:5px}html.webkit textarea.hs-input{padding-top:6px;padding-left:5px}input.hs-input[type=checkbox],input.hs-input[type=radio]{width:auto;height:auto;padding:0;margin:3px 0;line-height:normal;border:none}input.hs-input[type=file]{background-color:#fff;padding:initial;border:initial;line-height:initial;box-shadow:none}input.hs-input[type=button],input.hs-input[type=reset],input.hs-input[type=submit]{width:auto;height:auto}input.hs-input[type=search]{-webkit-border-radius:16px;-moz-border-radius:16px;-ms-border-radius:16px;border-radius:16px;background-image:url("/common_assets/static-2.197/img/form/search.png");background-repeat:no-repeat;padding-left:26px;padding-right:6px;padding-top:5px;padding-bottom:3px;background-position:8px 8px}html.firefox input.hs-input[type=search]{position:relative;top:1px}input.hs-input[type=search].transparent-image{background-image:url("/common_assets/static-2.197/img/form/search-transparent.png")}input.hs-input[type="search"]::-webkit-search-decoration,input.hs-input[type="search"]::-webkit-search-cancel-button,input.hs-input[type="search"]::-webkit-search-results-button,input.hs-input[type="search"]::-webkit-search-results-decoration{display:none}select.hs-input,input.hs-input[type=file]{height:27px}select[multiple].hs-input{height:inherit}textarea.hs-input{height:auto}.hs-input:-moz-placeholder{color:#bfbfbf}.hs-input::-webkit-input-placeholder{color:#bfbfbf}input.hs-input,textarea.hs-input{transition:border 0.2s linear,box-shadow 0.2s linear;box-shadow:inset 0 1px 3px rgba(0,0,0,0.1)}input.hs-input:focus,textarea.hs-input:focus{outline:none;border-color:rgba(82,168,236,0.8);box-shadow:inset 0 1px 3px rgba(0,0,0,0.1),0 0 8px rgba(82,168,236,0.6)}input.hs-input.error,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d div.field.error input,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d div.field.error textarea,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d div.field.error .chzn-choices,textarea.hs-input.error{border-color:#c87872;box-shadow:0 0 3px rgba(171,41,32,0.25)}input.hs-input.error:focus,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d div.field.error input:focus,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d div.field.error textarea:focus,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d div.field.error .chzn-choices:focus,textarea.hs-input.error:focus{border-color:#b9554d;box-shadow:0 0 6px rgba(171,41,32,0.5)}.input-mini.hs-input,input.mini.hs-input,textarea.mini.hs-input,select.mini.hs-input{width:60px}.input-small.hs-input,input.small.hs-input,textarea.small.hs-input,select.small.hs-input{width:90px}.input-medium.hs-input,input.medium.hs-input,textarea.medium.hs-input,select.medium.hs-input{width:150px}.input-large.hs-input,input.large.hs-input,textarea.large.hs-input,select.large.hs-input{width:210px}.input-xlarge.hs-input,input.xlarge.hs-input,textarea.xlarge.hs-input,select.xlarge.hs-input{width:270px}.input-xxlarge.hs-input,input.xxlarge.hs-input,textarea.xxlarge.hs-input,select.xxlarge.hs-input{width:530px}.input-stretch.hs-input,input.stretch.hs-input,textarea.stretch.hs-input,select.stretch.hs-input{box-sizing:border-box;width:100%}textarea.hs-input.xxlarge{overflow-y:auto}input.hs-input.span1,textarea.hs-input.span1,select.hs-input.span1{display:inline-block;float:none;width:30px;margin-left:0}input.hs-input.span2,textarea.hs-input.span2,select.hs-input.span2{display:inline-block;float:none;width:90px;margin-left:0}input.hs-input.span3,textarea.hs-input.span3,select.hs-input.span3{display:inline-block;float:none;width:150px;margin-left:0}input.hs-input.span4,textarea.hs-input.span4,select.hs-input.span4{display:inline-block;float:none;width:210px;margin-left:0}input.hs-input.span5,textarea.hs-input.span5,select.hs-input.span5{display:inline-block;float:none;width:270px;margin-left:0}input.hs-input.span6,textarea.hs-input.span6,select.hs-input.span6{display:inline-block;float:none;width:330px;margin-left:0}input.hs-input.span7,textarea.hs-input.span7,select.hs-input.span7{display:inline-block;float:none;width:390px;margin-left:0}input.hs-input.span8,textarea.hs-input.span8,select.hs-input.span8{display:inline-block;float:none;width:450px;margin-left:0}input.hs-input.span9,textarea.hs-input.span9,select.hs-input.span9{display:inline-block;float:none;width:510px;margin-left:0}input.hs-input.span10,textarea.hs-input.span10,select.hs-input.span10{display:inline-block;float:none;width:570px;margin-left:0}input.hs-input.span11,textarea.hs-input.span11,select.hs-input.span11{display:inline-block;float:none;width:630px;margin-left:0}input.hs-input.span12,textarea.hs-input.span12,select.hs-input.span12{display:inline-block;float:none;width:690px;margin-left:0}input.hs-input.span13,textarea.hs-input.span13,select.hs-input.span13{display:inline-block;float:none;width:750px;margin-left:0}input.hs-input.span14,textarea.hs-input.span14,select.hs-input.span14{display:inline-block;float:none;width:810px;margin-left:0}input.hs-input.span15,textarea.hs-input.span15,select.hs-input.span15{display:inline-block;float:none;width:870px;margin-left:0}input.hs-input.span16,textarea.hs-input.span16,select.hs-input.span16{display:inline-block;float:none;width:930px;margin-left:0}input.hs-input[disabled],select.hs-input[disabled],textarea.hs-input[disabled]{background-color:#f5f5f5;border-color:#ddd;cursor:not-allowed}.help-inline,.help-block{font-size:11px;line-height:18px;color:#818181}.help-inline{padding-left:5px}.help-block{display:block;max-width:600px}.inline-inputs{color:#818181}.inline-inputs span,.inline-inputs input{display:inline-block}.inline-inputs input.mini{width:60px}.inline-inputs input.small{width:90px}.inline-inputs span{padding:0 2px 0 1px}.input-prepend input,.input-append input{-webkit-border-radius:0 3px 3px 0;-moz-border-radius:0 3px 3px 0;-ms-border-radius:0 3px 3px 0;border-radius:0 3px 3px 0}.input-prepend .add-on,.input-append .add-on{position:relative;background:#f5f5f5;border:1px solid #ccc;z-index:2;float:left;display:block;width:auto;min-width:16px;height:18px;padding:4px 4px 4px 5px;margin-right:-1px;font-weight:normal;line-height:18px;color:#bfbfbf;text-align:center;text-shadow:0 1px 0 #fff;-webkit-border-radius:3px 0 0 3px;-moz-border-radius:3px 0 0 3px;-ms-border-radius:3px 0 0 3px;border-radius:3px 0 0 3px}.input-prepend .active,.input-append .active{background:#bfe0bf;border-color:#59ad59}.input-append input{float:left;-webkit-border-radius:3px 0 0 3px;-moz-border-radius:3px 0 0 3px;-ms-border-radius:3px 0 0 3px;border-radius:3px 0 0 3px}.input-append .add-on{-webkit-border-radius:0 3px 3px 0;-moz-border-radius:0 3px 3px 0;-ms-border-radius:0 3px 3px 0;border-radius:0 3px 3px 0;margin-right:0;margin-left:-1px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d{margin-bottom:18px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d fieldset{margin-bottom:18px;padding-top:18px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d fieldset legend{display:block;margin-left:150px;font-size:19.5px;line-height:1;color:#414141}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .clearfix,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .field,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-form-field{margin-bottom:18px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .clearfix:after,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .field:after,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-form-field:after{content:"";display:table;clear:both}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d label{padding-top:5px;font-size:13px;line-height:18px;font-weight:bold;float:left;width:130px;text-align:right;color:#414141}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .input{margin-left:150px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d div.field.error{background:#fae5e3;padding:6px 0;margin-bottom:18px;-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;border-radius:4px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d div.field.error>label,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d div.field.error span.help-inline,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d div.field.error span.help-block{color:#9d261d}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d div.field.error .input-prepend span.add-on,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d div.field.error .input-append span.add-on{background:#f4c8c5;border-color:#c87872;color:#b9554d}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hsErrMsgContainer ul{margin-top:6px;margin-bottom:0px;margin-left:7px;list-style:none}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hsErrMsgContainer ul li{font-size:12px;color:#a44e47}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hsErrMsgContainer .hs-block-message{min-width:200px;width:200px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hsErrMsgContainer .hs-block-message ul{margin-top:0px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .actions{background:#f5f5f5;margin-top:18px;margin-bottom:18px;padding:17px 20px 18px 150px;border-top:1px solid #ddd;-webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;-ms-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .actions .secondary-action{float:right}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .actions .secondary-action a{line-height:30px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .actions .secondary-action a:hover{text-decoration:underline}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .inputs-list{margin:0 0 5px;width:100%}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .inputs-list>li{display:block;padding:0;width:100%}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .inputs-list label{display:block;float:none;width:auto;padding:0;line-height:18px;text-align:left;white-space:normal;font-weight:normal}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .inputs-list label strong{color:#818181}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .inputs-list label small{font-size:11px;font-weight:normal}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .inputs-list .inputs-list{margin-left:25px;margin-bottom:10px;padding-top:0}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .inputs-list:first-child{padding-top:6px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .inputs-list>li+li{padding-top:2px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .inputs-list input[type=radio],.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .inputs-list input[type=checkbox]{margin-bottom:0}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d.stacked{padding-left:20px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d.stacked fieldset{padding-top:9px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d.stacked legend{margin-left:0}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d.stacked label{display:block;float:none;width:auto;font-weight:bold;text-align:left;line-height:20px;padding-top:0;margin-bottom:4px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d.stacked .field{margin-bottom:18px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d.stacked .field div.input{margin-left:0}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d.stacked .field div.input>input+a,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d.stacked .field div.input select+a,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d.stacked .field div.input textarea+a{margin-top:4px;display:block}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d.stacked .inputs-list{margin-bottom:0}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d.stacked .inputs-list>li{padding-top:0}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d.stacked .inputs-list>li label{font-weight:normal;padding-top:0}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d.stacked div.error{padding:3px 10px 6px;margin-top:0;margin-left:-10px;margin-bottom:9px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d.stacked .actions{margin-left:-20px;padding-left:20px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d{padding-left:0px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d.stacked{padding-left:0px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d.stacked fieldset{padding:0}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button{color:#fff;text-shadow:0 -1px 0 #3574e3;background-color:#3574e3;background-image:linear-gradient(to bottom, #7ec8f4,#3574e3);box-shadow:inset 0px 1px 0px rgba(255,255,255,0.5);border-top:1px solid #64baf0;border-bottom:1px solid #1c4ed5;border-right:1px solid #468ee6;border-left:1px solid #468ee6;border-radius:4px;transition:opacity 0.15s linear;-moz-user-select:none;-webkit-user-select:none;user-select:none}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button:visited,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button:hover{color:#fff}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button:hover:not(.inactive),.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button:focus:not(.inactive),.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button.hovered:not(.inactive){box-shadow:inset 0px 1px 0px rgba(255,255,255,0.5),0 0 5px #3574e3;border-top:1px solid #4db0ee;border-bottom:1px solid #1946be;border-right:1px solid #3080e3;border-left:1px solid #3080e3}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button:active:not(.inactive):not(.link),.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button.depressed:not(.inactive):not(.link),.dropdown-open>.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button:not(.inactive):not(.link){background-color:#599eeb;background-image:linear-gradient(to bottom, #3574e3,#599eeb);box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3),inset 0px -1px 0px rgba(255,255,255,0.3);border-top:1px solid #1c4ed5;border-bottom:1px solid #4084e2;border-right:1px solid #468ee6;border-left:1px solid #468ee6}.dropdown-open>.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button:not(.inactive):not(.link){box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3)}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button.disabled.disabled.disabled.disabled,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button[disabled][disabled][disabled]{background-color:#6387c5;background-image:linear-gradient(to bottom, #88b1ce,#6387c5);box-shadow:inset 0px 1px 0px rgba(255,255,255,0);border-top:1px solid #7baacc;border-bottom:1px solid #5774be;border-right:1px solid #6c94c7;border-left:1px solid #6c94c7;cursor:default;color:#ededed;text-shadow:none;opacity:0.6}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button.disabled.disabled.disabled.disabled.next:before,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button[disabled][disabled][disabled].next:before{opacity:0.5}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button.disabled.disabled.disabled.disabled.previous:before,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button[disabled][disabled][disabled].previous:before{opacity:0.5}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button.next:before,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button.previous:before{background:url(/style_guide/static-9.98/img/hs-button-arrows.png) center 0 no-repeat;display:block;width:16px;height:16px;position:absolute;top:5px;content:" ";z-index:99}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button.next{padding-right:32px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button.next:before{right:9px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button.previous{padding-left:32px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button.previous:before{background-position:center -16px;left:9px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-button.inactive{cursor:default}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d label{display:block;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-field-desc{width:100%;color:#aaa;margin:0px 0px 5px 150px;font-size:11px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-form-required{color:red}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .field{margin-bottom:9px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-richtext{margin-bottom:3px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;line-height:18px;font-size:14px;color:#414141}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-richtext hr{text-align:left;margin-left:0;width:91%}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .email-correction,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .email-validation{padding-top:3px;font-size:12px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .email-correction a,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .email-validation a{cursor:pointer}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .inputs-list{padding-left:5px;list-style:none}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .inputs-list li input{margin:3px 5px 3px 0px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d input[type=checkbox],.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d input[type=radio]{margin-right:5px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d input[type=date]{background:#fff}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d input:not([type="image"]),.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d textarea,.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d textarea.hs-input{box-sizing:content-box}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d.stacked .hs-field-desc{margin:0px 0px 2px 0px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-input{box-sizing:border-box;max-width:500px;width:90%}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-input:not[type=checkbox],.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-input:not[type=radio]{min-height:18px;min-width:100px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .actions{background:transparent;margin-top:18px;margin-bottom:18px;padding:17px 20px 18px 0px;border-top:none;-webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;-ms-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .actions .secondary-action{float:right}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .actions .secondary-action a{line-height:30px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .actions .secondary-action a:hover{text-decoration:underline}.fn-date-picker.pika-single{z-index:9999;display:block;position:relative;color:#333;background:#fff;border:1px solid #ccc;border-bottom-color:#bbb;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;*zoom:1}.fn-date-picker.pika-single.is-hidden{display:none}.fn-date-picker.pika-single.is-bound{position:absolute;box-shadow:0 5px 15px -5px rgba(0,0,0,0.5)}.fn-date-picker.pika-single:before,.fn-date-picker.pika-single:after{content:" ";display:table}.fn-date-picker.pika-single:after{clear:both}.fn-date-picker .pika-lendar{float:left;width:240px;margin:8px}.fn-date-picker .pika-title{position:relative;text-align:center}.fn-date-picker .pika-title select{cursor:pointer;position:absolute;z-index:9998;margin:0;left:0;top:5px;filter:alpha(opacity=0);opacity:0}.fn-date-picker .pika-label{display:inline-block;*display:inline;position:relative;z-index:9999;overflow:hidden;margin:0;padding:5px 3px;font-size:14px;line-height:20px;font-weight:bold;background-color:#fff}.fn-date-picker .pika-prev,.fn-date-picker .pika-next{display:block;cursor:pointer;position:relative;outline:none;border:0;padding:0;width:20px;height:30px;text-indent:20px;white-space:nowrap;overflow:hidden;background-color:transparent;background-position:center center;background-repeat:no-repeat;background-size:75% 75%;opacity:0.5;*position:absolute;*top:0}.fn-date-picker .pika-prev:hover,.fn-date-picker .pika-next:hover{opacity:1}.fn-date-picker .pika-prev.is-disabled,.fn-date-picker .pika-next.is-disabled{cursor:default;opacity:0.2}.fn-date-picker .pika-prev,.fn-date-picker .is-rtl .pika-next{float:left;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAAUklEQVR42u3VMQoAIBADQf8Pgj+OD9hG2CtONJB2ymQkKe0HbwAP0xucDiQWARITIDEBEnMgMQ8S8+AqBIl6kKgHiXqQqAeJepBo/z38J/U0uAHlaBkBl9I4GwAAAABJRU5ErkJggg==");*left:0}.fn-date-picker .pika-next,.fn-date-picker .is-rtl .pika-prev{float:right;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAAU0lEQVR42u3VOwoAMAgE0dwfAnNjU26bYkBCFGwfiL9VVWoO+BJ4Gf3gtsEKKoFBNTCoCAYVwaAiGNQGMUHMkjGbgjk2mIONuXo0nC8XnCf1JXgArVIZAQh5TKYAAAAASUVORK5CYII=");*right:0}.fn-date-picker .pika-select{display:inline-block;*display:inline}.fn-date-picker .pika-table{width:100%;border-collapse:collapse;border-spacing:0;border:0}.fn-date-picker .pika-table th,.fn-date-picker .pika-table td{width:14.28571%;padding:0}.fn-date-picker .pika-table th{color:#999;font-size:12px;line-height:25px;font-weight:bold;text-align:center}.fn-date-picker .pika-table abbr{border-bottom:none;cursor:help}.fn-date-picker .pika-button{cursor:pointer;display:block;-moz-box-sizing:border-box;box-sizing:border-box;outline:none;border:0;margin:0;width:100%;padding:5px;color:#666;font-size:12px;line-height:15px;text-align:right;background:#f5f5f5}.fn-date-picker .pika-button:hover{color:#fff !important;background:#ff8000 !important;box-shadow:none !important;border-radius:3px !important}.fn-date-picker .is-today .pika-button{color:#3af;font-weight:bold}.fn-date-picker .is-selected .pika-button{color:#fff;font-weight:bold;background:#3af;box-shadow:inset 0 1px 3px #178fe5;border-radius:3px}.fn-date-picker .is-disabled .pika-button{pointer-events:none;cursor:default;color:#999;opacity:0.3}.fn-date-picker .pika-week{font-size:11px;color:#999}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d fieldset{border:0;padding:0;margin:0;max-width:500px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d fieldset.form-columns-1 .hs-input{width:95%}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d fieldset.form-columns-1 .input{margin-right:8px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d fieldset.form-columns-1 input[type="checkbox"],.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d fieldset.form-columns-1 input[type="radio"]{width:auto}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d fieldset.form-columns-2 .hs-form-field{width:50%;float:left}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d fieldset.form-columns-2 .input{margin-right:8px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d fieldset.form-columns-3 .hs-form-field{width:32.7%;float:left}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d fieldset.form-columns-3 .input{margin-right:8px}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d label.hs-hidden{visibility:hidden}.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .hs-field-desc{width:100%}.hsformerror{margin:0 0 2px;padding:2px 6px;height:auto;background-color:#fdd2d0;font-size:11px;border:1px solid #fcb3af;padding:4px 16px 4px 10px;color:#000;display:none;background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefefe), color-stop(100%, #fdd2d0));background-image:-webkit-linear-gradient(#fefefe, #fdd2d0);background-image:-moz-linear-gradient(#fefefe, #fdd2d0);background-image:-o-linear-gradient(#fefefe, #fdd2d0);background-image:linear-gradient(#fefefe,#fdd2d0);-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;-o-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 0 6px #ddd;-moz-box-shadow:0 0 6px #ddd;box-shadow:0 0 6px #ddd;z-index:99999}.hsformerror em{border:10px solid;border-color:#fdd2d0 transparent transparent;bottom:-17px;display:block;height:0;left:60px;position:absolute;width:0}.hsformerror p{font-family:Lucida Grande,Lucida Sans Unicode,bitstream vera sans,trebuchet ms,verdana,sans-serif;margin:0;float:left;margin-right:8px}.hsformerror:hover{cursor:default}.hsformerror .close-form-error{float:right;display:inline;top:3px;position:absolute;font-family:Verdana !important;color:#b17c79 !important;cursor:pointer !important;font-size:11px !important;font-weight:normal !important}.hsformerror .close-form-error:hover{color:#cc8884}@media (max-width: 400px), (min-device-width: 320px) and (max-device-width: 480px){form.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .form-columns-2 .hs-form-field,form.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .form-columns-3 .hs-form-field{float:none;width:100%}form.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .form-columns-2 .hs-form-field .hs-input,form.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .form-columns-3 .hs-form-field .hs-input{width:95%}form.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .form-columns-2 .hs-form-field input[type="checkbox"],form.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .form-columns-2 .hs-form-field input[type="radio"],form.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .form-columns-3 .hs-form-field input[type="checkbox"],form.hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d .form-columns-3 .hs-form-field input[type="radio"]{width:auto}}.legal-consent-container .field.hs-form-field{margin-bottom:8px}.legal-consent-container .hs-field-desc.checkbox-desc{margin:-12px 0 0 21px}.legal-consent-container .hs-form-booleancheckbox-display p{margin:0;display:inline-block}.legal-consent-container .hs-error-msgs label{color:#f2545b}.legal-consent-container ~ .hs_recaptcha{margin-top:18px}</style></head>
+
+<body class="theme-dark io-azure no-touch loaded" data-spy="scroll" data-target="#mainnav" data-offset="80" data-gr-c-s-loaded="true">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPDR5T8" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<!-- Header -->
+	<header class="site-header is-sticky">
+
+		<!-- Place Particle Js -->
+		<!-- <div id="particles-js" class="particles-container particles-js"></div> -->
+
+		<!-- Navbar -->
+		<div class="navbar navbar-expand-lg is-transparent" id="mainnav">
+			<nav class="container">
+				<a class="navbar-brand animated fadeInDown" data-animate="fadeInDown" data-delay=".65" href="https://constellationlabs.io/" style="visibility: visible; animation-delay: 0.65s;">
+					<img class="logo logo-dark" alt="logo" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/APPENDLY.png">
+					<img class="logo logo-light" alt="logo" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/APPENDLY.png">
+				</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle">
+					<span class="navbar-toggler-icon">
+						<span class="ti ti-align-justify"></span>
+					</span>
+				</button>
+
+				<div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
+					<ul class="navbar-nav animated remove-animation fadeInDown" data-animate="fadeInDown" data-delay=".9" style="visibility: visible; animation-delay: 0.9s;">
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="https://constellationlabs.io/#intro">Platform
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<!-- <li class="nav-item"><a class="nav-link menu-link" href="#tokenSale">Token Sale</a></li> -->
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="https://constellationlabs.io/#roadmap">Solutions</a>
+						</li>
+						<!-- <li class="nav-item"><a class="nav-link menu-link" href="#apps">Apps</a></li> -->
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="https://constellationlabs.io/#team">Pricing</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link menu-link" href="https://constellationlabs.io/#faq">Team</a>
+						</li>
+						<li class="nav-item">
+							<a target="_blank" class="nav-link menu-link" href="https://constellationlabs.io/blog">Resources</a>
+						</li>
+						<!-- <li class="nav-item"><a class="nav-link menu-link" href="#contact">Contact</a></li> -->
+					</ul>
+					<ul class="navbar-nav navbar-btns animated remove-animation fadeInDown" data-animate="fadeInDown" data-delay="1.15" style="visibility: visible; animation-delay: 1.15s;">
+						<li class="nav-item">
+							<a target="_blank" class="nav-link btn btn-sm btn-outline menu-link" href="https://github.com/Constellation-Labs/Whitepaper/blob/master/constellation_whitepaper_v0.1.pdf">Whitepaper</a>
+						</li>
+						<li class="nav-item">
+							<a style="" class="nav-link btn btn-sm btn-outline menu-link" href="https://constellationlabs.io/airdrop">Request a Demo</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- End Navbar -->
+
+		<!-- Banner/Slider -->
+		<div id="header" class="banner banner-full d-flex align-items-center">
+			<div class="container">
+				<div class="banner-content">
+					<div class="row align-items-center mobile-center">
+						<div class="col-lg-6 col-md-12 order-lg-first">
+							<div class="header-txt">
+								<h1 class="animated fadeInUp" data-animate="fadeInUp" data-delay="1.55" style="visibility: visible; animation-delay: 1.55s;">An Enterprise AI solution to business problems
+									<br class="d-none d-xl-block"> </h1>
+								<!-- <br class="d-none d-xl-block"> Consumer Grade Applications</h1> -->
+								<p class="lead animated fadeInUp" data-animate="fadeInUp" data-delay="1.65" style="visibility: visible; animation-delay: 1.65s;">Scalable Models - High Accuracy - Fast Interface
+									<!-- <br class="d-none d-xl-block"> Transaction Output</p> -->
+
+									</p><ul class="btns animated fadeInUp" data-animate="fadeInUp" data-delay="1.75" style="visibility: visible; animation-delay: 1.75s;">
+										<li>
+											<a style="box-shadow:none; background-color:white; background-image:none; color:#1559ff;" target="_blank" href="https://t.me/constellationcommunity" class="btn">Join Us on Telegram</a>
+										</li>
+										<li>
+											<a style="background-image:none; background-color:transparent; box-shadow: none; border: solid 2px #00F1B7;" href="https://constellationlabs.io/airdrop" class="btn btn-alt">Request a Demo</a>
+										</li>
+									</ul>
+							</div>
+						</div>
+						<!-- .col  -->
+						<div class="col-lg-6 col-md-12 order-first res-m-bttm-lg">
+							<div class="header-image-alt animated fadeInRight" data-animate="fadeInRight" data-delay="1.25" style="visibility: visible; animation-delay: 1.25s;">
+								<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/devices-powering-network.svg" alt="header">
+							</div>
+						</div>
+						<!-- .col  -->
+					</div>
+					<!-- .row  -->
+				</div>
+				<!-- .banner-content  -->
+			</div>
+			<!-- .container  -->
+		</div>
+		<!-- End Banner/Slider -->
+		<div class="header-partners">
+			<div class="container">
+				<div class="row align-items-center">
+					<ul class="partner-list-s2 d-flex flex-wrap align-items-center">
+						<li class="animated fadeInUp" data-animate="fadeInUp" data-delay="1.85" style="visibility: visible; animation-delay: 1.85s;">Our
+							<br> Partners</li>
+						<li class="animated fadeInUp" data-animate="fadeInUp" data-delay="1.9" style="visibility: visible; animation-delay: 1.9s;">
+							<a href="https://constellationlabs.io/#">
+								<img width="44px" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/batshit-logo.png" alt="partner">
+							</a>
+						</li>
+						<li class="animated fadeInUp" data-animate="fadeInUp" data-delay="1.95" style="visibility: visible; animation-delay: 1.95s;">
+							<a href="https://constellationlabs.io/#">
+								<img width="150px" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/cryptodex-w.svg" alt="partner">
+							</a>
+						</li>
+						<li class="animated fadeInUp" data-animate="fadeInUp" data-delay="2.1" style="visibility: visible; animation-delay: 2.1s;">
+							<a href="https://constellationlabs.io/#">
+								<img width="76px" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/APPENDLY.png" alt="partner">
+							</a>
+						</li>
+						<li class="animated fadeInUp" data-animate="fadeInUp" data-delay="2.05" style="visibility: visible; animation-delay: 2.05s;">
+							<a href="https://constellationlabs.io/#">
+								<img width="62px" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/tldr-logo-w.svg" alt="partner">
+							</a>
+						</li>
+						<li class="animated fadeInUp" data-animate="fadeInUp" data-delay="2" style="visibility: visible; animation-delay: 2s;">
+							<a href="https://constellationlabs.io/#">
+								<img width="156px" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/chainrock-logo-w.svg" alt="partner">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- .row  -->
+			</div>
+			<!-- .container  -->
+		</div>
+		<!-- .header-partners  -->
+		<a href="https://constellationlabs.io/#intro" class="scroll-down menu-link">SCROLL DOWN</a>
+	</header>
+	<!-- End Header -->
+
+	<!-- Start Section -->
+	<div id="intro" class="section section-pad section-bg section-pro has-maskbg">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-lg-8 offset-lg-2">
+					<div class="section-head-s2">
+						<h6 class="heading-xs animated fadeInUp" data-animate="fadeInUp" data-delay=".0" style="visibility: visible; animation-delay: 0s;">SAY GOODBYE TO TRADITONAL PROBLEM SOLVING METHODS</h6>
+						<h2 class="section-title animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s;">How Appendly Handles Business Problem Solving?</h2>
+						<p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">Appendly helps the most innovative companies in the world with their most ambitious projects.</p>
+					</div>
+					
+				</div>
+				<!-- .col  -->
+			</div>
+			<!-- .row  -->
+			<div class="row text-center">
+				<div class="col-md-4">
+					<div class="features-box animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+						<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/horizontal-scalable-icn.svg" alt="features">
+						<h5>Horizontally Scalable</h5>
+						<p>Network capacity is proportional to user adoption.</p>
+					</div>
+				</div>
+				<!-- .col  -->
+				<div class="col-md-4">
+					<div class="features-box animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
+						<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/fast-transactions-icn.svg" alt="features">
+						<h5>Fast Transactions</h5>
+						<p>Partitioned consensus allows the network to scale the number of transactions per second, infinitely.</p>
+					</div>
+				</div>
+				<!-- .col  -->
+				<div class="col-md-4">
+					<div class="features-box animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
+						<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/no-fees-icn.svg" alt="features">
+						<h5>No Transaction Fees</h5>
+						<p>Reputation based incentives eliminate transaction fees between users.</p>
+					</div>
+				</div>
+				<!-- .col  -->
+				<div class="col-md-4">
+					<div class="features-box animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+						<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/decentralized-icn.svg" alt="features">
+						<h5>Truly Decentralized</h5>
+						<p>Reputation based delegate selection gives every participant the ability to contribute to consensus.</p>
+					</div>
+				</div>
+				<!-- .col  -->
+				<div class="col-md-4">
+					<div class="features-box animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
+						<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/mobile-compatible-icn.svg" alt="features">
+						<h5>Mobile Compatible</h5>
+						<p>Lightweight, full-nodes are compatible with any mobile device. Nodes double sign transactions then broadcast them to
+							the network.</p>
+					</div>
+				</div>
+				<!-- .col  -->
+				<div class="col-md-4">
+					<div class="features-box animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
+						<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/smart-contracts-icn.svg" alt="features">
+						<h5>Smart Contracts</h5>
+						<p>Constellation deploys smart contracts as microservices. This allows for services to be chained and composed into distributed
+							applications.
+						</p>
+					</div>
+				</div>
+				<!-- .col  -->
+			</div>
+			<!-- .row  -->
+
+			<!-- .row  -->
+		</div>
+		<!-- .conatiner  -->
+		<div class="mask-ov-right mask-ov-s2"></div>
+		<!-- .mask overlay -->
+	</div>
+	<!-- Start Section -->
+
+
+	<!-- Start Section -->
+
+	<!-- Start Section -->
+
+
+
+	<div class="section section-pad section-bg team-section section-gradiant section-fix bg-fixed" id="team">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-lg-6 offset-lg-3">
+					<div class="section-head-s2">
+						<h6 class="heading-xs animated fadeInUp" data-animate="fadeInUp" data-delay=".0" style="visibility: visible; animation-delay: 0s;">Our Team</h6>
+						<h2 class="section-title animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="visibility: visible; animation-delay: 0.1s;">The Appendly Sangam</h2>
+						<p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">Appendly is a multidisciplinary team backed by top tier investors and advisors.</p>
+					</div>
+					
+				</div>
+				<!-- .col  -->
+			</div>
+			<!-- .row  -->
+			<div class="row">
+				<div class="col-md-6 col-lg-4 offset-lg-2 offset-xl-0 col-xl-3 d-inline-flex justify-content-center">
+					<div class="team-member animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+						<div class="team-photo">
+							<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/brendan.jpg" alt="team">
+							<a href="https://constellationlabs.io/?__hstc=753710.cffc9bedc804affe9565a1c6a752f4d8.1529688658216.1529688658216.1529688658216.1&amp;__hssc=753710.1.1529688658220&amp;__hsfp=3295465716#team-profile-1" class="expand-trigger content-popup"></a>
+						</div>
+						<div class="team-info">
+							<h5 class="team-name">Sai
+								<br>Adarsh</h5>
+							<span class="team-title">CEO </span>
+							<ul class="team-social">
+								<li>
+									<a target="_blank" href="https://www.linkedin.com/in/brendanplayford/">
+										<em class="fa fa-linkedin"></em>
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://github.com/teslashibe">
+										<em class="fa fa-github"></em>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Start .team-profile  -->
+						<div id="team-profile-1" class="team-profile mfp-hide">
+							<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+							<div class="container-fluid">
+								<div class="row no-mg">
+									<div class="col-md-6">
+										<div class="team-profile-photo">
+											<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/brendan.jpg" alt="team">
+										</div>
+									</div>
+									<!-- .col  -->
+
+									<div class="col-md-6">
+										<div class="team-profile-info">
+											<h3 class="name">Sai Adarsh</h3>
+											<p class="sub-title">CEO</p>
+											<ul class="tpi-social">
+												<li>
+													<a target="_blank" href="https://www.linkedin.com/in/brendanplayford/">
+														<em class="fa fa-linkedin"></em>
+													</a>
+												</li>
+												<li>
+													<a target="_blank" href="https://github.com/teslashibe">
+														<em class="fa fa-github"></em>
+													</a>
+												</li>
+											</ul>
+											<p>11 years of business management experience; 5 years of blockchain experience, mining, trading, and running ICO’s;
+												Data Scientist; Front-end developer; Studied an MSci, Physics at University College London.</p>
+
+										</div>
+									</div>
+									<!-- .col  -->
+
+								</div>
+								<!-- .row  -->
+							</div>
+							<!-- .container  -->
+						</div>
+						<!-- .team-profile  -->
+
+					</div>
+				</div>
+				<!-- .col  -->
+
+				<div class="col-md-6 col-lg-4 col-xl-3 d-inline-flex justify-content-center">
+					<div class="team-member animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
+						<div class="team-photo">
+							<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/wyatt-dubai.png" alt="team">
+							<a href="https://constellationlabs.io/?__hstc=753710.cffc9bedc804affe9565a1c6a752f4d8.1529688658216.1529688658216.1529688658216.1&amp;__hssc=753710.1.1529688658220&amp;__hsfp=3295465716#team-profile-2" class="expand-trigger content-popup"></a>
+						</div>
+						<div class="team-info">
+							<h5 class="team-name">Rajasekar
+							</h5><br>
+							<span class="team-title">CTO</span>
+							<ul class="team-social">
+								<li>
+									<a target="_blank" href="https://www.linkedin.com/in/wlmeldmanfloch/">
+										<em class="fa fa-linkedin"></em>
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://github.com/buckysballs">
+										<em class="fa fa-twitter"></em>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Start .team-profile  -->
+						<div id="team-profile-2" class="team-profile mfp-hide">
+							<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+							<div class="container-fluid">
+								<div class="row no-mg">
+									<div class="col-md-6">
+										<div class="team-profile-photo">
+											<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/wyatt-dubai.png" alt="team">
+										</div>
+									</div>
+									<!-- .col  -->
+
+									<div class="col-md-6">
+										<div class="team-profile-info">
+											<h3 class="name">Wyatt Meldman-Floch</h3>
+											<p class="sub-title">CTO &amp; Senior Developer</p>
+											<ul class="tpi-social">
+												<li>
+													<a target="_blank" href="https://www.linkedin.com/in/wlmeldmanfloch/">
+														<em class="fa fa-linkedin"></em>
+													</a>
+												</li>
+												<li>
+													<a target="_blank" href="https://github.com/buckysballs">
+														<em class="fa fa-twitter"></em>
+													</a>
+												</li>
+											</ul>
+											<p>Over 5 years experience as a Software Engineer &amp; Data Scientist in Silicon Valley. A functional programming expert
+												with Dapp development and machine learning. Studied Physics and Mathematics at The College of William and Mary
+												and University of St. Andrews.</p>
+
+										</div>
+									</div>
+									<!-- .col  -->
+
+								</div>
+								<!-- .row  -->
+							</div>
+							<!-- .container  -->
+						</div>
+						<!-- .team-profile  -->
+
+					</div>
+				</div>
+				<!-- .col  -->
+
+				<div class="col-md-6 col-lg-4 offset-lg-2 offset-xl-0 col-xl-3 d-inline-flex justify-content-center">
+					<div class="team-member animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
+						<div class="team-photo">
+							<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/ben.jpg" alt="team">
+							<a href="https://constellationlabs.io/?__hstc=753710.cffc9bedc804affe9565a1c6a752f4d8.1529688658216.1529688658216.1529688658216.1&amp;__hssc=753710.1.1529688658220&amp;__hsfp=3295465716#team-profile-3" class="expand-trigger content-popup"></a>
+						</div>
+						<div class="team-info">
+							<h5 class="team-name">Benjamin
+								<br>Jorgensen</h5>
+							<span class="team-title">COO</span>
+							<ul class="team-social">
+								<li>
+									<a target="_blank" href="https://www.linkedin.com/in/bjorgensen/">
+										<em class="fa fa-linkedin"></em>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Start .team-profile  -->
+						<div id="team-profile-3" class="team-profile mfp-hide">
+							<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+							<div class="container-fluid">
+								<div class="row no-mg">
+									<div class="col-md-6">
+										<div class="team-profile-photo">
+											<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/ben.jpg" alt="team">
+										</div>
+									</div>
+									<!-- .col  -->
+
+									<div class="col-md-6">
+										<div class="team-profile-info">
+											<h3 class="name">Benjamin Jorgensen</h3>
+											<p class="sub-title">COO</p>
+											<ul class="tpi-social">
+												<li>
+													<a target="_blank" href="https://www.linkedin.com/in/bjorgensen/">
+														<em class="fa fa-linkedin"></em>
+													</a>
+												</li>
+											</ul>
+											<p>An angel investor and entrepreneur. Responsible for the fluid operation of Constellation's business. </p>
+										</div>
+									</div>
+									<!-- .col  -->
+								</div>
+								<!-- .row  -->
+							</div>
+							<!-- .container  -->
+						</div>
+						<!-- .team-profile  -->
+
+					</div>
+				</div>
+				<!-- .col  -->
+
+				<div class="col-md-6 col-lg-4 col-xl-3 d-inline-flex justify-content-center">
+					<div class="team-member animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+						<div class="team-photo">
+							<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/altif.jpg" alt="team">
+							<a href="https://constellationlabs.io/?__hstc=753710.cffc9bedc804affe9565a1c6a752f4d8.1529688658216.1529688658216.1529688658216.1&amp;__hssc=753710.1.1529688658220&amp;__hsfp=3295465716#team-profile-4" class="expand-trigger content-popup"></a>
+						</div>
+						<div class="team-info">
+							<h5 class="team-name">Altif
+								<br>Brown</h5>
+							<span class="team-title">CCO</span>
+							<ul class="team-social">
+								<li>
+									<a target="_blank" href="https://www.linkedin.com/in/altifbrown/">
+										<em class="fa fa-linkedin"></em>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+
+						<!-- Start .team-profile  -->
+						<div id="team-profile-4" class="team-profile mfp-hide">
+							<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+							<div class="container-fluid">
+								<div class="row no-mg">
+									<div class="col-md-6">
+										<div class="team-profile-photo">
+											<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/altif.jpg" alt="team">
+										</div>
+									</div>
+									<!-- .col  -->
+
+									<div class="col-md-6">
+										<div class="team-profile-info">
+											<h3 class="name">Altif Brown</h3>
+											<p class="sub-title">CCO</p>
+											<ul class="tpi-social">
+												<li>
+													<a target="_blank" href="https://www.linkedin.com/in/altifbrown/">
+														<em class="fa fa-linkedin"></em>
+													</a>
+												</li>
+											</ul>
+											<p>Altif Brown known by many as A / B, has worked for years supporting and optimizing the user experience of global
+												communities.
+											</p>
+											<p>As an early adopter of cryptocurrencies, he is invested in making sure the Constellation community has the tools
+												and knowledge necessary for a fluid experience.</p>
+										</div>
+									</div>
+									<!-- .col  -->
+								</div>
+								<!-- .row  -->
+							</div>
+							<!-- .container  -->
+						</div>
+						<!-- .team-profile  -->
+
+					</div>
+				</div>
+				<!-- .col  -->
+
+				
+				<!-- .col  -->
+
+				
+				<!-- .col  -->
+
+				
+				<!-- .col  -->
+
+				
+				<!-- .col  -->
+
+				
+				<!-- .col  -->
+
+				
+				<!-- .col  -->
+
+				
+				<!-- .col  -->
+
+				
+
+				
+				<!-- .col  -->
+
+				
+				<!-- .col  -->
+
+				
+				<!-- .col  -->
+
+				
+				<!-- .col  -->
+
+
+
+				
+				<!-- .col  -->
+
+				
+				<!-- .col  -->
+
+				
+				<!-- .col  -->
+
+				
+				<!-- .col  -->
+
+				
+				<!-- .col  -->
+
+				
+				<!-- .col  -->
+
+				
+
+				<!-- .col  -->
+
+				
+				<!-- .col  -->
+
+				
+				<!-- .col  -->
+			</div>
+			<!-- .row  -->
+
+
+
+
+
+		</div>
+	</div>
+
+
+	<!-- Start Section -->
+	<div class="section section-pad faq-section section-pro no-pb section-bg has-maskbg" id="faq" style="overflow:hidden; background:#fafafa !important;">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-lg-6 offset-lg-3">
+					<div class="section-head-s2">
+						<h6 class="heading-xs animated" data-animate="fadeInUp" data-delay=".0">Faqs</h6>
+						<h2 class="section-title animated" data-animate="fadeInUp" data-delay=".1">Frequently Asked Questions</h2>
+						<p class="animated" data-animate="fadeInUp" data-delay=".2">Our active and vibrant community have highlighted a number of questions specific to our roadmap, vision and platform.
+							Here are some of the questions that regularly come up. Ask us anything on Telegram!</p>
+					</div>
+				</div>
+				<!-- .col  -->
+			</div>
+			<!-- .row  -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="tab-custom tab-custom-s2">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs text-center animated" data-animate="fadeInUp" data-delay=".15">
+							<li class="nav-item">
+								<a class="nav-link active" data-toggle="tab" href="https://constellationlabs.io/#tab-1">General</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="https://constellationlabs.io/#tab-2">AIRDROP</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="https://constellationlabs.io/#tab-3">TECHNOLOGY</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="https://constellationlabs.io/#tab-4">RAKUGO</a>
+							</li>
+							<!-- <li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-5">Legal</a>
+							</li> -->
+						</ul>
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div class="tab-pane fade show active" id="tab-1">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="single-faq animated" data-animate="fadeInUp" data-delay=".3">
+											<h5>What is DAG?</h5>
+											<p>In more traditional blockchains, the host provides the food/drinks (i.e resources) for this party. And when the
+												guests arrive, the amount of resources can only accommodate so many people, the portions are small and then everything
+												eventually runs out and the party ends. Think Constellation DAG like a potluck (a party where everyone brings
+												food/drinks). With every added guest (node to the network), the more resources the party has to keep going. This
+												is the nature of Constellation, a distributed system that scales horizontally.</p>
+										</div>
+									</div>
+									<!-- .col  -->
+									<div class="col-md-6">
+										<div class="single-faq animated" data-animate="fadeInUp" data-delay=".4">
+											<h5>What is a Microservice?</h5>
+											<p>“Microservices” is an approach to application development in which a large application is built as a suite of
+												modular services. Each module supports a specific business goal and uses a simple, well-defined interface to
+												communicate with other sets of services. Uber, for example, is not a singular app purse. It is a unified app
+												which means it is a single interface that brings together their driver app, their rider app, and their corporate
+												team app.</p>
+										</div>
+									</div>
+									<!-- .col  -->
+									<div class="col-md-6">
+										<div class="single-faq animated" data-animate="fadeInUp" data-delay=".2">
+											<h5>Is Constellation a Blockchain?</h5>
+											<p>Not exactly. Although inspired by the principles of decentralization, many standard blockchains such as Bitcoin
+												and Ethereum face scalability issues. This is why the next, generation of decentralized networks such as Hashgraph,
+												IOTA, and Constellation have turned to DAG.</p>
+										</div>
+									</div>
+									<!-- .col  -->
+									<div class="col-md-6">
+										<div class="single-faq animated" data-animate="fadeInUp" data-delay=".5">
+											<h5>What is a smart contract?</h5>
+											<p>A smart contract, also known as a cryptocontract, is a computer program that directly controls the transfer of
+												digital currencies, assets, or data between parties under certain conditions. These contracts are stored on blockchain
+												technology, a decentralized ledger that also underpins bitcoin, and other cryptocurrencies.</p>
+										</div>
+									</div>
+									<!-- .col  -->
+								</div>
+								<!-- .row  -->
+							</div>
+							<!-- End tab-pane -->
+							<div class="tab-pane fade" id="tab-2">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+											<h5>When is the Airdrop?</h5>
+											<p>Please visit our Airdrop registration page to
+												<a style="color:blue; margin-left:-12px;" href="https://constellationlabs.io/airdrop/?utm_source=TGE&amp;utm_medium=Blog&amp;utm_campaign=TGE&amp;utm_term=TGE&amp;utm_content=TGE">register.</a>
+											</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+											<h5>I haven't received my email confirmation?</h5>
+											<p>Some email service providers have issues with delivery from our email service provider. Please check spam and
+												reach out to support@constellationlabs.io to ask questions. Please allow up to 7-days for a response as our support
+												team is very busy.</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+											<h5>Will Token Economics be released prior to the TGE event?</h5>
+											<p>Yes, investors have received our token breakout, we’re finalizing the details before making it public.
+											</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+											<h5>If I register how many AirDrops will I be eligible for?</h5>
+											<p>Each registrant will only be eligible for 1 AirDrop over the six months. This is to allow for an even and fair
+												distribution of tokens amongst the community.</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+											<h5>How do I earn more tokens after the AirDrop?</h5>
+											<p>The community and developer portal will be gamified with token bounties available for different projects e.g Translations,
+												Documentation Contribution, Debugging, Developing ACI's and Microservices etc.
+											</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+											<h5>What's the difference between the community and developer tiers?</h5>
+											<p>Both grant membership to the community portal. The developer tier opens up additional access to the team and priority
+												access to developer tools. Developers will be able to build microservices and ACI's that can be offered for use
+												through the Constellation DApp Market. </p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+											<h5>Is the AirDrop open to US Citizens ?</h5>
+											<p>Unfortunately, the AirDrop is not open to US Citizens at this time. We are currently working to make this available,
+												and expect to be able to do this sometime in the next three months. Please sit tight and we will get a solution
+												soon.
+											</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+											<h5>How many tokens are available in the AirDrop?</h5>
+											<p>Community members are eligible for 250 tokens and Developers are eligible for 1000 tokens. Each amount is locked
+												as a membership for 6-months. </p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+											<h5>Will the AirDrop be ERC20 or Main Token?</h5>
+											<p>The AirDrop will be an ERC20 token which will then be swapped at the mainnet launch.
+											</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+											<h5>Are my tokens locked?</h5>
+											<p>Yes, your tokens are locked for 6-months and are used as a membership to access our community and developer portal
+												Orion.
+											</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+											<h5>I haven't received my email confirmation? What the heck is going on? Do I get tokens?</h5>
+											<p>Some email service providers have issues with delivery from our email service provider. Please check spam and
+												reach out to support@constellationlabs.io to ask questions. Please allow up to 7-days for a response as our support
+												team is very busy.
+											</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+											<h5>Am I guaranteed a place in the AirDrop?</h5>
+											<p>No. Not everyone will get access to the AirDrop and it is limited each month to 5,000,000 tokens which are split
+												between the community (250 tokens) and developers (1000) tokens. If you miss the first AirDrop you will get a
+												chance in the next month. </p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+											<h5>How will I know if I have been selected for the AirDrop?</h5>
+											<p>You will get an email on the 1st of July 2018 notifying you of your place in the first AirDrop and giving you
+												a unique link for our KYC/AML process.
+											</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+											<h5>More questions? </h5>
+											<p>Drop into the Constellation
+												<a href="https://t.me/constellationcommunityairdrop" target="_blank" style="color:blue;">AirDrop Telegram</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- .row  -->
+							</div>
+							<!-- End tab-pane -->
+							<div class="tab-pane fade" id="tab-3">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+											<h5>How does a microservice relate to a smart contract?</h5>
+											<p>Microservices, as we have embraced them, are developed as off chain applications that execute smart contract logic.
+												They are concurrent processes unlike smart contracts which must be in every node in the network.</p>
+										</div>
+									</div>
+									<!-- .col  -->
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
+											<h5>How many transactions can the hylochain push through?</h5>
+											<p>Constellations’s Hylochain has 4,000-4,800 transactions per second for every 1,200 nodes. So that means for 1
+												million people this will be close to 4.5 million transactions per second.</p>
+										</div>
+									</div>
+									<!-- .col  -->
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
+											<h5>How does constellation prevent a double spend attack?</h5>
+											<p>Our DAG architecture prevents against this. Every node notarizes its transactions in a personal chain and that
+												transaction is signed by the second party. Thus transaction order is always preserved and if transaction order
+												is preserved, double spends are impossible.</p>
+										</div>
+									</div>
+									<!-- .col  -->
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+											<h5>How do nodes in different galaxies transact with each other?</h5>
+											<p>All nodes, galaxies included, are instances of the same application. They all keep track of their local cluster
+												but also run a peer finding sub process which allows new nodes to find a cluster.</p>
+										</div>
+									</div>
+									<!-- .col  -->
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+											<h5>Why did you choose the name "Proof of MEME"?</h5>
+											<p>Since 1976, a meme has been a unit representing an imitable idea or behavior that can be spread. In our case,
+												it represents benevolent behavior across Constellation that is rewarded and should be imitated to improve a nodes
+												overall reputation within the system. Proof of Meme is meritocracy compared to Proof of Stake which is a plutocracy.</p>
+										</div>
+									</div>
+									<!-- .col  -->
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="visibility: visible; animation-delay: 0.5s;">
+											<h5>How does one establish a reputation with proof of MEME when they begin?</h5>
+											<p>They open the constellation app and click a button that says “join the network”. This makes their rep score grow.
+												This will use the phone’s excess bandwidth to help Constellation work. When they want to leave they must confirm
+												they wish to exit their star cluster, otherwise they will continue to gain crypto in exchange for resources.</p>
+										</div>
+									</div>
+									<!-- .col  -->
+								</div>
+								<!-- .row  -->
+							</div>
+							<!-- End tab-pane -->
+							<div class="tab-pane fade" id="tab-4">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="single-faq animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+											<h5>What about Rakugo?</h5>
+											<p>The team formed in 2017 to build Rakugo, a decentralized content platform launched on Ethereum. After realizing
+												the inherent limitations of the Ethereum platform, they pivoted to create Constellation a DAG protocol that would
+												be able to support projects like Rakugo. All investors were fully refunded or transitioned to Constellation.
+												If you have any questions about Rakugo please reach out to us on telegram.</p>
+										</div>
+									</div>
+									<!-- .col  -->
+								</div>
+								<!-- .row  -->
+							</div>
+							<!-- End tab-pane -->
+						</div>
+						<!-- End tab-content -->
+					</div>
+					<!-- End tab-custom -->
+				</div>
+				<!-- .col -->
+			</div>
+			<!-- .row -->
+		</div>
+		<!-- End container -->
+		<div class="mask-ov-left mask-ov-s5"></div>
+		<!-- .mask overlay -->
+	</div>
+	<!-- End Section -->
+
+	<!-- Start Section -->
+	<div class="section section-pad section-bg-dark" id="partners" style="background-color: white;">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-6 offset-md-3">
+					<div class="section-head">
+						<h6 class="section-title-sm animated" data-animate="fadeInUp" data-delay=".0" style="color:black;">All Our Partners</h6>
+					</div>
+				</div>
+			</div>
+			<!-- .row  -->
+			<div class="partner-list">
+				<div class="row text-center flex-center">
+					<div class="col-sm col-6">
+						<div class="single-partner animated" data-animate="fadeInUp" data-delay=".1">
+							<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/tldr-logo.png" alt="partner">
+						</div>
+					</div>
+					<!-- .col  -->
+					<div class="col-sm col-6">
+						<div class="single-partner animated" data-animate="fadeInUp" data-delay=".2">
+							<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/batshit-logo.png" alt="partner">
+						</div>
+					</div>
+					<!-- .col  -->
+					<div class="col-sm col-6">
+						<div class="single-partner animated" data-animate="fadeInUp" data-delay=".3">
+							<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/connect-capital-logo.png" alt="partner">
+						</div>
+					</div>
+					<!-- .col  -->
+					<div class="col-sm col-6">
+						<div class="single-partner animated" data-animate="fadeInUp" data-delay=".4">
+							<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/cryptodex-logo.png" alt="partner">
+						</div>
+					</div>
+					<!-- .col  -->
+					<div class="col-sm col-6">
+						<div class="single-partner animated" data-animate="fadeInUp" data-delay=".5">
+							<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/wachsman-logo.png" alt="partner">
+						</div>
+					</div>
+					<!-- .col  -->
+					<div class="col-sm col-6">
+						<div class="single-partner animated" data-animate="fadeInUp" data-delay=".6">
+							<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/chainrock-logo.png" alt="partner">
+						</div>
+					</div>
+					<!-- .col  -->
+				</div>
+				<!-- .row  -->
+				<div class="row text-center ">
+					<div class="col-md-10 offset-md-1">
+						<div class="row flex-center">
+							<div class="col-sm col-6">
+								<div class="single-partner animated" data-animate="fadeInUp" data-delay=".7">
+									<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/mw-partners.png" alt="partner">
+								</div>
+							</div>
+							<!-- .col  -->
+							<div class="col-sm col-6">
+								<div class="single-partner animated" data-animate="fadeInUp" data-delay=".8">
+									<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/crypto-bazar-logo.png" alt="partner">
+								</div>
+							</div>
+							<!-- .col  -->
+							<div class="col-sm col-6">
+								<div class="single-partner animated" data-animate="fadeInUp" data-delay=".9">
+									<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/game-theory-group-logo.png" alt="partner">
+								</div>
+							</div>
+							<!-- .col  -->
+							<div class="col-sm col-6">
+								<div class="single-partner animated" data-animate="fadeInUp" data-delay="1">
+									<img src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/the-bureau-logo.png" alt="partner">
+								</div>
+							</div>
+							<!-- .col  -->
+							<div class="col-sm col-6">
+								<div class="single-partner animated" data-animate="fadeInUp" data-delay="1">
+									<img width="70px;" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/shastaventures.svg" alt="partner">
+								</div>
+							</div>
+							<!-- .col  -->
+						</div>
+						<!-- .row  -->
+					</div>
+					<!-- .col  -->
+				</div>
+				<!-- .row  -->
+			</div>
+			<!-- .partner-list  -->
+		</div>
+		<!-- .container  -->
+	</div>
+	<!-- End Section -->
+
+	<!-- Start Section -->
+	<div class="section footer-scetion footer-particle section-pad-sm section-bg-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-xl-4 res-l-bttm">
+					<a class="footer-brand animated" data-animate="fadeInUp" data-delay="0" href="https://constellationlabs.io/">
+						<img class="logo logo-light" alt="logo" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/APPENDLY.png">
+					</a>
+					<ul class="social">
+						<li class="animated" data-animate="fadeInUp" data-delay=".1">
+							<a target="_blank" href="https://www.facebook.com/Conste11ation/">
+								<em class="fa fa-facebook"></em>
+							</a>
+						</li>
+						<li class="animated" data-animate="fadeInUp" data-delay=".2">
+							<a target="_blank" href="https://twitter.com/Conste11ation">
+								<em class="fa fa-twitter"></em>
+							</a>
+						</li>
+						<li class="animated" data-animate="fadeInUp" data-delay=".3">
+							<a target="_blank" href="https://www.youtube.com/channel/UChMBV4al3p_iO4bnfzcIzVQ?guided_help_flow=3&amp;disable_polymer=true">
+								<em class="fa fa-youtube-play"></em>
+							</a>
+						</li>
+						<li class="animated" data-animate="fadeInUp" data-delay=".4">
+							<a target="_blank" href="https://github.com/Constellation-Labs/Whitepaper/blob/master/constellation_whitepaper_v0.1.pdf">
+								<em class="fa fa-github"></em>
+							</a>
+						</li>
+						<li class="animated" data-animate="fadeInUp" data-delay=".5">
+							<a target="_blank" href="https://www.reddit.com/user/ConstellationLabs/">
+								<em class="fa fa-reddit"></em>
+							</a>
+						</li>
+						<li class="animated" data-animate="fadeInUp" data-delay=".6">
+							<a target="_blank" href="https://medium.com/constellationlabs">
+								<em class="fa fa-medium"></em>
+							</a>
+						</li>
+						<li class="animated" data-animate="fadeInUp" data-delay=".6">
+							<a target="_blank" href="https://www.instagram.com/constellation_labs/">
+								<em class="fa fa-instagram"></em>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- .col  -->
+				<div id="interest-list" class="col-sm-6 col-xl-4 res-l-bttm">
+					<div class="footer-subscription">
+						<!-- <h6 class="animated" data-animate="fadeInUp" data-delay=".6">Subscribe to our Interest List</h6>
+						<form id="subscribe-form" action="form/subscribe.php" method="post" class="subscription-form animated" data-animate="fadeInUp"
+						 data-delay=".7">
+							<input type="text" name="youremail" class="input-round required email" placeholder="Enter your email">
+							<input type="text" class="d-none" name="form-anti-honeypot" value="">
+							<button type="submit" class="btn btn-plane">Subscribe</button>
+							<div class="subscribe-results"></div>
+						</form> -->
+
+
+						<!-- Intest List Hubspot Script -->
+
+						<!--[if lte IE 8]>
+						<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+						<![endif]-->
+						<script charset="utf-8" type="text/javascript" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/v2.js.download"></script>
+						<script>
+							hbspt.forms.create({
+								portalId: "4221910",
+								formId: "fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153"
+							});
+						</script><div class="hbspt-form" id="hbspt-form-1529683036169-4182653144"><form novalidate="" accept-charset="UTF-8" action="https://forms.hsforms.com/submissions/v3/public/submit/formsnext/multipart/4221910/fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153" enctype="multipart/form-data" id="hsForm_fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153" method="POST" class="hs-form stacked hs-form-private hs-form-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153_d2510111-0aa3-4805-9666-d976563f803d" data-form-id="fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153" data-portal-id="4221910" target="target_iframe_fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153" data-reactid=".hbspt-forms-0"><div class="hs_email hs-email hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.0:$0"><label id="label-email-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153" class="" placeholder="Enter your Subscribe to our Interest List" for="email-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153" data-reactid=".hbspt-forms-0.0:$0.0"><span data-reactid=".hbspt-forms-0.0:$0.0.0">Subscribe to our Interest List</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.0:$0.0.1">*</span></label><legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$0.1"></legend><div class="input" data-reactid=".hbspt-forms-0.0:$0.$email"><input id="email-fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153" class="hs-input" type="email" name="email" required="" placeholder="Enter your email address" value="" autocomplete="email" data-reactid=".hbspt-forms-0.0:$0.$email.0"></div></div><noscript data-reactid=".hbspt-forms-0.1"></noscript><div class="hs_submit hs-submit" data-reactid=".hbspt-forms-0.4"><div class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.4.0"></div><div class="actions" data-reactid=".hbspt-forms-0.4.1"><input type="submit" value="Subscribe" class="hs-button primary large" data-reactid=".hbspt-forms-0.4.1.0"></div></div><input name="hs_context" type="hidden" value="{&quot;rumScriptExecuteTime&quot;:8866.000000038184,&quot;rumServiceResponseTime&quot;:12805.199999944307,&quot;rumFormRenderTime&quot;:2336.3000000827014,&quot;rumTotalRequestTime&quot;:2316.5999999037012,&quot;lang&quot;:&quot;en&quot;,&quot;pageUrl&quot;:&quot;https://constellationlabs.io/&quot;,&quot;pageTitle&quot;:&quot;Horizontally Scalable Hylochain With Microservices | Constellation Labs&quot;,&quot;source&quot;:&quot;FormsNext-static-1.953&quot;,&quot;isHostedOnHubspot&quot;:false,&quot;timestamp&quot;:1529683037061,&quot;userAgent&quot;:&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36&quot;,&quot;referrer&quot;:&quot;&quot;,&quot;hutk&quot;:&quot;ba88ffafd2da4447f23c3d806a4ae137&quot;,&quot;originalEmbedContext&quot;:{&quot;portalId&quot;:&quot;4221910&quot;,&quot;formId&quot;:&quot;fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153&quot;,&quot;target&quot;:&quot;#hbspt-form-1529683036169-4182653144&quot;,&quot;redirectUrl&quot;:&quot;&quot;,&quot;inlineMessage&quot;:true},&quot;recentFieldsCookie&quot;:{},&quot;boolCheckBoxFields&quot;:&quot;&quot;,&quot;dateFields&quot;:&quot;&quot;,&quot;redirectUrl&quot;:&quot;&quot;,&quot;smartFields&quot;:{},&quot;urlParams&quot;:{},&quot;formValidity&quot;:{},&quot;formTarget&quot;:&quot;#hbspt-form-1529683036169-4182653144&quot;,&quot;correlationId&quot;:&quot;db2dcae1-8ea2-468c-8215-d7108ddd7ce1&quot;,&quot;disableCookieSubmission&quot;:false,&quot;isFallback&quot;:false}" data-reactid=".hbspt-forms-0.5"><iframe name="target_iframe_fd9b02e8-aa7b-4b7e-aaf3-e5fb5d944153" style="display:none;" data-reactid=".hbspt-forms-0.6" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/saved_resource.html"></iframe></form></div>
+						<!-- End Intest List Hubspot Script -->
+					</div>
+				</div>
+				<!-- .col  -->
+				<div class="col-xl-4">
+					<ul class="link-widget animated" data-animate="fadeInUp" data-delay=".8">
+						<li>
+							<a href="https://constellationlabs.io/#intro" class="menu-link">Platform</a>
+						</li>
+						<li>
+							<a href="https://constellationlabs.io/#roadmap" class="menu-link">Solutions</a>
+						</li>
+						<li>
+							<a href="https://constellationlabs.io/#team" class="menu-link">Pricing</a>
+						</li>
+						<li>
+							<a href="https://constellationlabs.io/#faq" class="menu-link">Team</a>
+						</li>
+
+						<li>
+							<a target="_blank" href="https://constellationlabs.io/blog" class="menu-link">Resources</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://github.com/Constellation-Labs/Whitepaper/blob/master/constellation_whitepaper_v0.1.pdf" class="menu-link">Whitepaper</a>
+						</li>
+						<li>
+							<a href="https://constellationlabs.io/#contact" class="menu-link">Token Info</a>
+						</li>
+					</ul>
+				</div>
+				<!-- .col  -->
+			</div>
+			<!-- .row  -->
+			<div class="gaps size-2x"></div>
+			<div class="row">		
+				<div class="col-md-7">
+					<span class="copyright-text animated" data-animate="fadeInUp" data-delay=".9">
+						Copyright © Appendly 2018
+					</span>
+				</div>
+				<!-- .col  -->
+				<div class="col-md-5 text-right mobile-left">
+					<ul class="footer-links animated" data-animate="fadeInUp" data-delay="1">
+						<li>
+							<a target="_blank" href="https://constellationlabs.io/privacy.html">Privacy Policy</a>
+						</li>
+						<!-- <li>
+							<a href="#">Terms &amp; Conditions</a>
+						</li> -->
+					</ul>
+				</div>
+				<!-- .col  -->
+			</div>
+			<!-- .row  -->
+		</div>
+		<!-- .container  -->
+	</div>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1766519026947993");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1766519026947993&amp;ev=PageView&amp;noscript=1"></noscript>
+
+
+	<!-- End Section -->
+
+	<!-- Preloader !remove please if you do not want -->
+	<div id="preloader" style="display: none;">
+		<div id="loader" style="display: none;"></div>
+		<div class="loader-section loader-top"></div>
+		<div class="loader-section loader-bottom"></div>
+	</div>
+	<!-- Preloader End -->
+
+	<!-- JavaScript (include all script here) -->
+	<script src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/jquery.bundle.js.download"></script>
+	<script src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/script.js.download"></script>
+	<script src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/tracking.js.download"></script>
+	<!-- Compiled and minified JavaScript -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
+	<script>
+		// $('select').material_select();
+	</script>
+
+	<!-- jQuery Validate -->
+	<script src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/jquery.min.js.download"></script>
+	<script src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/jquery.validate.min.js.download"></script>
+	<script src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/custom.js.download"></script>
+
+
+
+<script src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/saved_resource" type="text/javascript"></script><script src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/adsct" type="text/javascript"></script><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.06717683292958299"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.6260208740638593" width="0" height="0" alt="" src="./Horizontally Scalable Hylochain With Microservices _ Constellation Labs_files/0"></div></body></html>
